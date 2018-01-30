@@ -2,6 +2,8 @@
 
 I wrote this small plugin (jQuery MouseDirection Plugin) this afternoon to trigger eight custom event for any visible element in the DOM structure. Here is the source code. This plugin registers eight custom directional event like up,down,left,right,top-left,top-right,bottom-left, bottom-right and one more generic event called “mousedirection” where you can capture the direction of the mouse using event object’s “direction” parameters (like event.direction)
 
+**License: This project is released under MIT license**
+
 And here is how you can use it
 
 ```html
