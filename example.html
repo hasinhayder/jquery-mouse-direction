@@ -1,0 +1,29 @@
+<!Doctype html>
+<head>
+    <title>jQuery Mouse Direction Plugin Demo</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript" charset="utf-8"></script>
+    <script src="jquery.mousedirection.js" type="text/javascript" charset="utf-8"></script>
+    <style type="text/css">
+        .container {
+            height: 150px;
+            margin: 20px;
+            padding: 20px;
+            width: 300px;
+            border: 1px solid #888;
+        }
+    </style>
+<body>
+<div class="container">
+    Move your mouse over this box
+</div>
+<script type='text/javascript'>
+    $(function () {
+        $.mousedirection();
+        $(".container").bind("mousedirection", function (e) {
+            $(this).html("Mouse Direction: <b>"+e.direction+"</b>");
+        });
+    });
+</script>
+</body>
+</html>
